@@ -1,6 +1,5 @@
 import sys
 
-import numpy as np
 import tensorflow as tf
 
 sys.path.append("../")

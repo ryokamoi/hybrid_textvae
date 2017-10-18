@@ -4,16 +4,15 @@ import tensorflow as tf
 
 flags = tf.app.flags
 
-flags.DEFINE_string('DATA_PATH', "dataset/mc_review2/data_mc.pkl", "")
-flags.DEFINE_string('LABEL_PATH', "dataset/mc_review2/label_mc.pkl", "")
-flags.DEFINE_string('DICT_PATH', "dictionary/mc_review2/dict_mc.pkl", "")
+flags.DEFINE_string('DATA_PATH', "dataset/DATASET", "")
+flags.DEFINE_string('LABEL_PATH', "dataset/DATASET", "")
+flags.DEFINE_string('DICT_PATH', "dictionary/DATASET", "")
 
 flags.DEFINE_integer('VOCAB_SIZE', 20000, '')
 flags.DEFINE_integer('BATCH_SIZE', 32, '')
 flags.DEFINE_integer('SEQ_LEN', 60, '')
 flags.DEFINE_integer('EPOCH', 80, '')
 flags.DEFINE_integer('BATCHES_PER_EPOCH', 1000, '')
-flags.DEFINE_integer('LABELED_NUM', 30000, '')
 
 flags.DEFINE_integer('DROPOUT_KEEP', 1.0, '')
 flags.DEFINE_integer('LEARNING_RATE', 0.001, '')

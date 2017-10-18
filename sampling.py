@@ -39,13 +39,11 @@ def sampling():
 
             # random output
             generated_texts = []
-            lv_list= []
             for i in range(itr+1):
                 z = np.random.normal(loc=0.0, scale=1.0,
                                      size=[FLAGS.BATCH_SIZE, FLAGS.LATENT_VARIABLE_SIZE])
                 sample_logits = sess.run(vae_restored.rnn_logits,
                                          feed_dict = {vae_restored.latent_variables: z})
-                lv_list.extend(z)
 
                 if i==itr:
                     sample_num = res
