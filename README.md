@@ -5,8 +5,6 @@ original implementation (Theano):[https://github.com/stas-semeniuta/textvae](htt
 
 This is NOT an original implementation. There may be some minor differences from the original structure.
 
-Results are reported in [my blog](https://sesenosannko.github.io/contents/text_g/hybrid)
-
 ## Prerequisites
 
  * Python 3.5
